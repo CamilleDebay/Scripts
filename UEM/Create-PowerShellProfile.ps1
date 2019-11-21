@@ -20,6 +20,12 @@ else {
     $CommandLine = "&`$env:SystemRoot\sysnative\WindowsPowerShell\v1.0\powershell.exe -EncodedCommand " + $Base64Script
 }
 
+if ($CommandLine.Length -gt 32767 )
+{   
+    Write-Error -Message "Command line is greater then 32767 characters which the maximum for Windows. " -ErrorAction Stop
+    Exit
+}
+
 [XML] $WapProfile = '<wap-provisioningdoc id="" name="customprofile"><characteristic type="com.airwatch.winrt.powershellcommand" uuid=""><parm name="PowershellCommand" value=""/></characteristic></wap-provisioningdoc>'
 
 #Generating a new GUID for the profile
