@@ -34,7 +34,7 @@ $WapProfile.'wap-provisioningdoc'.id = [GUID]::NewGuid().ToString()
 $WapProfile.'wap-provisioningdoc'.characteristic.uuid = [GUID]::NewGuid().ToString()
 
 #Adding Command Line
-Write-Debug -Message "Addnig Command Line"
+Write-Debug -Message "Adding Command Line"
 $WapProfile.'wap-provisioningdoc'.characteristic.parm.value = $CommandLine
 
 #Exporting XML to File
