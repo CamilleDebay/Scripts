@@ -92,7 +92,9 @@ $CSPExceptionLocation = (
     'software\microsoft\windows\windows search\preferences',
     'software\microsoft\exchange',
     'software\policies\microsoft\vba\security',
-    'software\microsoft\onedrive'
+    'software\microsoft\onedrive',
+    'software\Microsoft\Edge',
+    'Software\Microsoft\EdgeUpdate\'
 )
 
 # Lower casing to avoid case sensitive issue
