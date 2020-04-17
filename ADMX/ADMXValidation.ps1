@@ -18,6 +18,7 @@
 param(
         [Parameter(Mandatory=$true,ValueFromPipeline=$true,HelpMessage="Path to ADMX files or folder containing ADMX files")][String] $Path,
         [Parameter(Mandatory=$false,ValueFromPipeline=$true,HelpMessage="Display correct policy")][switch] $DisplayCorrectPolicy
+)
 
 ###############################################
 # Parameters validation
